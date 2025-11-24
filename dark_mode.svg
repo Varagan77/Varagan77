@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="900px" height="530px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="950px" height="530px" font-size="16px">
 <style>
 /* Font and color definitions for the dark terminal theme */
 @font-face {
@@ -17,7 +17,7 @@ text, tspan {white-space: pre;}
 </style>
 
 <!-- Background rectangle (Dark Mode) -->
-<rect width="900px" height="530px" fill="#161b22" rx="15"/>
+<rect width="950px" height="530px" fill="#161b22" rx="15"/>
 
 <!-- ASCII Art Block (Left Side - X: 15) -->
 <text x="15" y="30" fill="#c9d1d9" class="ascii">
@@ -50,19 +50,27 @@ text, tspan {white-space: pre;}
 
 <!-- Compact Status Data Block (Right Side - X: 420) -->
 <text x="420" y="30" fill="#c9d1d9">
-    <tspan x="420" y="30"><tspan class="value">Varagan77</tspan> -—————————————————————————————-</tspan>
+    <!-- Centered Header -->
+    <tspan x="420" y="30"><tspan class="cc">—————————————————————————</tspan><tspan class="value"> Varagan77 </tspan><tspan class="cc">——————————————————————————</tspan></tspan>
     
-    <tspan x="420" y="60" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ............................ </tspan><tspan class="value">Windows 11, Linux</tspan>
-    <tspan x="420" y="80" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">25 years</tspan>
-    <tspan x="420" y="100" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ............................ </tspan><tspan class="value">VSCode, VStudio, Clion </tspan>
+    <!-- System/Setup Info -->
+    <tspan x="420" y="60" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">Windows 11, Linux</tspan>
+    <tspan x="420" y="80" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> .................... </tspan><tspan class="value">25 years</tspan>
+    <tspan x="420" y="100" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">VSCode, VStudio, Clion </tspan>
+    <tspan x="420" y="120" class="cc">. </tspan><tspan class="key">Terminal</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">zsh, Windows Terminal</tspan>
     
-    <tspan x="420" y="140" class="cc">. </tspan><tspan class="key">Languages.Programming</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">C++, C#, Python, </tspan>
-    <tspan x="420" y="160" class="cc">. </tspan><tspan class="key">Languages.Computer</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">HTML, CSS, JSON, LaTeX, YAML</tspan>
-    <tspan x="420" y="180" class="cc">. </tspan><tspan class="key">Languages.Real</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">English, Afrikaans</tspan>
+    <!-- Languages Section -->
+    <tspan x="420" y="160" class="cc">. </tspan><tspan class="key">Languages.Programming</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">C++, C#, Python, </tspan>
+    <tspan x="420" y="180" class="cc">. </tspan><tspan class="key">Languages.Computer</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value">HTML, CSS, JSON, LaTeX, YAML</tspan>
+    <tspan x="420" y="200" class="cc">. </tspan><tspan class="key">Languages.Real</tspan>:<tspan class="cc"> ............ </tspan><tspan class="value">English, Afrikaans</tspan>
+    <tspan x="420" y="220" class="cc">. </tspan><tspan class="key">Languages.Markup</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">XML, Markdown</tspan>
+    <tspan x="420" y="240" class="cc">. </tspan><tspan class="key">Languages.Scripting</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">Bash, Powershell</tspan>
 
-    <tspan x="420" y="230">- Contact</tspan> -—————————————————————————————-
+    <!-- Centered Contact Header -->
+    <tspan x="420" y="280"><tspan class="cc">——————————————————————————</tspan><tspan class="value"> Contact </tspan><tspan class="cc">———————————————————————————</tspan></tspan>
     
-    <tspan x="420" y="260" class="cc">. </tspan><tspan class="key">Email.Personal</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">johanneswillemkotze@gmail.com</tspan>
-    <tspan x="420" y="280" class="cc">. </tspan><tspan class="key">Discord</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">varagan77</tspan>
+    <!-- Contact Info -->
+    <tspan x="420" y="310" class="cc">. </tspan><tspan class="key">Email.Personal</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">johanneswillemkotze@gmail.com</tspan>
+    <tspan x="420" y="330" class="cc">. </tspan><tspan class="key">Discord</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">varagan77</tspan>
 </text>
 </svg>
