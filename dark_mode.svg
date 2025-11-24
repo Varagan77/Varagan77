@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="530px" font-size="16px">
+<style>
+@font-face {
+src: local('Consolas'), local('Consolas Bold');
+font-family: 'ConsolasFallback';
+font-display: swap;
+-webkit-size-adjust: 109%;
+size-adjust: 109%;
+}
+.key {fill: #ffa657;} /* Amber/Yellow for Headers */
+.value {fill: #a5d6ff;} /* Light Blue/Cyan for Data */
+.addColor {fill: #3fb950;} /* Green */
+.delColor {fill: #f85149;} /* Red */
+.cc {fill: #616e7f;} /* Comment/Dot Color */
+text, tspan {white-space: pre;}
+</style>
+<rect width="985px" height="530px" fill="#161b22" rx="15"/>
+<text x="15" y="30" fill="#c9d1d9" class="ascii">
+<tspan x="15" y="30">           g@M%@%%@N%Nw,,                   </tspan>
+<tspan x="15" y="50">        ,M*|`||*%gNM=]mM%g||%N,             </tspan>
+<tspan x="15" y="70">       p!``  '! |''` '''|||jhlj%w           </tspan>
+<tspan x="15" y="90">     ,@L `    ,,        ''!`|j%M]%M         </tspan>
+<tspan x="15" y="110">    ]j'` .,wp@pw,    `.     ''''|%Wg       </tspan>
+<tspan x="15" y="130">  /{||]@@@@@@@@@pp.             |||||      </tspan>
+<tspan x="15" y="150"> '` ']@@@@@@@@@@@@@@p     , ,'''` `        </tspan>
+<tspan x="15" y="170">  , :]%%@@@@@%%%%%%k%h '*||mkr     *       </tspan>
+<tspan x="15" y="190">  '  j%M`      |jkk'   ~nrn=|i    ;`       </tspan>
+<tspan x="15" y="210">   !  jrr*^`             `"!  L'':!   </tspan>
+<tspan x="15" y="230">    j  lp;,.  ,/ @@    ,;\nmy "  ,~   </tspan>
+<tspan x="15" y="250">   i r @@@@mmHM @@@@ `^****M*,p ;,         </tspan>
+<tspan x="15" y="270">   | ]@@@@HHH]g@M%%%%%H,jmgpmb%  j         </tspan>
+<tspan x="15" y="290">    ;;%%%%%k%@[,.n|;.;j%%k|%k%%',[         </tspan>
+<tspan x="15" y="310">     H|%%k%%%j%k||,;;j;!!'|%ij}]@          </tspan>
+<tspan x="15" y="330">     "djjmkL,"]][,,,,wwxw;|#kjk` </tspan>
+<tspan x="15" y="350">       %;%km%%%%M%M|%%jkkii|||[            </tspan>
+<tspan x="15" y="370">        kjj%%kkkl|!||||||j|||"        </tspan>
+<tspan x="15" y="390">         |jm%H@@@b%%kkmk%i|!,[             </tspan>
+<tspan x="15" y="410">         @p|j%%%%jkk|||j*'`;j[             </tspan>
+<tspan x="15" y="430">        ]@@@g|'''`'''  ` ,;j%k             </tspan>
+<tspan x="15" y="450">        @@@@@mgmp;,,,,:;jj%%k%             </tspan>
+<tspan x="15" y="470">       @@@@@@@@%%kgki!|jjjj%k%@ .          </tspan>
+<tspan x="15" y="490">. ^['' %@@@@HH%b%k{illljkjj%%%% ; `,.      </tspan>
+<tspan x="15" y="510">=[' ` . %HH%%%%%H@gkilljjj%kk%".   `'i</tspan>
+</text>
+<text x="390" y="30" fill="#c9d1d9">
+<tspan x="390" y="30"><tspan class="value">[YOUR_GITHUB_USERNAME]</tspan>@<tspan class="value">STUDENT-UNIT</tspan></tspan> ———————————————————————————————————————————-—-
+<tspan x="390" y="50" class="cc">. </tspan><tspan class="key">STATUS</tspan>:<tspan class="cc"> ....................... </tspan><tspan class="value">ACADEMIC_UNIT_734</tspan>
+<tspan x="390" y="70" class="cc">. </tspan><tspan class="key">UPTIME</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">[Years] years, [Months] months, [Days] days</tspan>
+<tspan x="390" y="90" class="cc">. </tspan><tspan class="key">LOCATION</tspan>:<tspan class="cc"> ..................... </tspan><tspan class="value">[Your City], EARTH_SECTOR_4516</tspan>
+<tspan x="390" y="110" class="cc">. </tspan><tspan class="key">KERNEL_MODE</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">STUDENT_MODE (KNOWLEDGE_ACQUISITION)</tspan>
+<tspan x="390" y="130" class="cc">. </tspan><tspan class="key">CORE_ENV</tspan>:<tspan class="cc"> ...................... </tspan><tspan class="value">[Linux/Windows/Mac] + [Plasma/VSCode]</tspan>
+<tspan x="390" y="150" class="cc">. </tspan>
+<tspan x="390" y="170" class="cc">. </tspan><tspan class="key">MODULES</tspan>.<tspan class="key">PRIMARY</tspan>:<tspan class="cc"> .......... </tspan><tspan class="value">Java, Python, JavaScript, C++</tspan>
+<tspan x="390" y="190" class="cc">. </tspan><tspan class="key">MODULES</tspan>.<tspan class="key">TARGET</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">Data Structures, Web Dev, Game Engines</tspan>
+<tspan x="390" y="210" class="cc">. </tspan><tspan class="key">MODULES</tspan>.<tspan class="key">NON_EXISTENT</tspan>:<tspan class="cc"> ... </tspan><tspan class="delColor">FULL_PORTFOLIO (UNDER R&amp;D)</tspan>
+<tspan x="390" y="230" class="cc">. </tspan>
+<tspan x="390" y="250" class="cc">. </tspan><tspan class="key">INTEREST</tspan>.<tspan class="key">ACADEMIC</tspan>:<tspan class="cc"> ....... </tspan><tspan class="value">AI Principles, Networking</tspan>
+<tspan x="390" y="270" class="cc">. </tspan><tspan class="key">INTEREST</tspan>.<tspan class="key">LEISURE</tspan>:<tspan class="cc"> ............ </tspan><tspan class="value">Football, Gaming, [Other Hobby]</tspan>
+<tspan x="390" y="310">- CONTACT_INTERFACE</tspan> ———————————————————————————————————————————-—-
+<tspan x="390" y="330" class="cc">. </tspan><tspan class="key">EMAIL</tspan>.<tspan class="key">PERSONAL</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">[your.email@example.com]</tspan>
+<tspan x="390" y="350" class="cc">. </tspan><tspan class="key">LINKEDIN</tspan>:<tspan class="cc"> ............................ </tspan><tspan class="value">[Your LinkedIn Profile Link]</tspan>
+<tspan x="390" y="370" class="cc">. </tspan><tspan class="key">TELEGRAM</tspan>:<tspan class="cc"> ............................. </tspan><tspan class="value">t.me/[yourtelegram]</tspan>
+<tspan x="390" y="390" class="cc">. </tspan><tspan class="key">SIGNAL_STATUS</tspan>:<tspan class="cc"> .................... </tspan><tspan class="value">ONLINE</tspan>
+<tspan x="390" y="410" class="cc">. </tspan>
+<tspan x="390" y="450">- GITHUB_STATS</tspan> ————————————————————————————————————————————-—-
+<tspan x="390" y="470" class="cc">. </tspan><tspan class="key">REPOS</tspan>:<tspan class="cc" id="repo_data_dots"> .................... </tspan><tspan class="value" id="repo_data">95</tspan> {<tspan class="key">CONTRIB</tspan>: <tspan class="value" id="contrib_data">133</tspan>} | <tspan class="key">STARS</tspan>:<tspan class="cc" id="star_data_dots"> ............ </tspan><tspan class="value" id="star_data">342</tspan>
+<tspan x="390" y="490" class="cc">. </tspan><tspan class="key">COMMITS</tspan>:<tspan class="cc" id="commit_data_dots"> ................. </tspan><tspan class="value" id="commit_data">2,116</tspan> | <tspan class="key">FOLLOWERS</tspan>:<tspan class="cc" id="follower_data_dots"> ...... </tspan><tspan class="value" id="follower_data">196</tspan>
+<tspan x="390" y="510" class="cc">. </tspan><tspan class="key">LINES_OF_CODE_TRACKED</tspan>:<tspan class="cc" id="loc_data_dots">.. </tspan><tspan class="value" id="loc_data">446,276</tspan> ( <tspan class="addColor" id="loc_add">523,178</tspan><tspan class="addColor">++</tspan>, <tspan id="loc_del_dots"> </tspan><tspan class="delColor" id="loc_del">76,902</tspan><tspan class="delColor">--</tspan> )
+</text>
+</svg>
