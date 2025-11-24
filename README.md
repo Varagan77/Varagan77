@@ -1,4 +1,4 @@
-<div style="font-family: 'Consolas', 'Courier New', monospace; color: #00FF00; background-color: transparent; border: 1px solid #005500; padding: 10px;">
+<div style="font-family: 'Fira Code', 'Consolas', 'Courier New', 'Lucida Console', monospace; color: #00FF00; background-color: transparent; border: 1px solid #005500; padding: 10px;">
 
 # <span style="color: #00AA00;">&gt; **[ACCESS GRANTED]** // SYSTEM_INITIATION_PROFILE_v3.1</span>
 
@@ -61,6 +61,8 @@
 <span style="color: #00AA00;">&gt; **[CLOSING_CONNECTION]**</span>
 
 <span style="color: #00FF00;">\`print("Hello World!")\`</span> // END_OF_TRANSMISSION
+
+</div>
 
 </div>
 <img src="https://pacman.abozanona.me?username=varagan77" />
