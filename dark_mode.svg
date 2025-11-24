@@ -1,21 +1,25 @@
-<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="530px" font-size="16px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="900px" height="530px" font-size="16px">
 <style>
+/* Font and color definitions for the dark terminal theme */
 @font-face {
-src: local('Consolas'), local('Consolas Bold');
-font-family: 'ConsolasFallback';
-font-display: swap;
--webkit-size-adjust: 109%;
-size-adjust: 109%;
+  src: local('Consolas'), local('Consolas Bold');
+  font-family: 'ConsolasFallback';
+  font-display: swap;
+  -webkit-size-adjust: 109%;
+  size-adjust: 109%;
 }
-.key {fill: #ffa657;} /* Amber/Yellow for Headers */
+.key {fill: #ffa657;} /* Amber/Yellow for Headers/Keys */
 .value {fill: #a5d6ff;} /* Light Blue/Cyan for Data */
 .addColor {fill: #3fb950;} /* Green */
 .delColor {fill: #f85149;} /* Red */
 .cc {fill: #616e7f;} /* Comment/Dot Color */
 text, tspan {white-space: pre;}
 </style>
-<rect width="985px" height="530px" fill="#161b22" rx="15"/>
+
+<!-- Background rectangle (Dark Mode) -->
+<rect width="900px" height="530px" fill="#161b22" rx="15"/>
+
+<!-- ASCII Art Block (Left Side - X: 15) -->
 <text x="15" y="30" fill="#c9d1d9" class="ascii">
 <tspan x="15" y="30">           g@M%@%%@N%Nw,,                   </tspan>
 <tspan x="15" y="50">        ,M*|`||*%gNM=]mM%g||%N,             </tspan>
@@ -43,20 +47,22 @@ text, tspan {white-space: pre;}
 <tspan x="15" y="490">. ^['' %@@@@HH%b%k{illljkjj%%%% ; `,.      </tspan>
 <tspan x="15" y="510">=[' ` . %HH%%%%%H@gkilljjj%kk%".   `'i</tspan>
 </text>
-<text x="15" y="30" fill="#c9d1d9">
-    <tspan x="15" y="30"><tspan class="value">Varagan77</tspan> -———————————————————————————————————-—-</tspan>
-    
-    <tspan x="15" y="60" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ............................ </tspan><tspan class="value">Windows 11, Linux</tspan>
-    <tspan x="15" y="80" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">25 years</tspan>
-    <tspan x="15" y="100" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ............................ </tspan><tspan class="value">VSCode, VStudio, Clion </tspan>
-    
-    <tspan x="15" y="140" class="cc">. </tspan><tspan class="key">Languages.Programming</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">C++, C#, Python, </tspan>
-    <tspan x="15" y="160" class="cc">. </tspan><tspan class="key">Languages.Computer</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">HTML, CSS, JSON, LaTeX, YAML</tspan>
-    <tspan x="15" y="180" class="cc">. </tspan><tspan class="key">Languages.Real</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">English, Afrikaans</tspan>
 
-    <tspan x="15" y="230">- Contact</tspan> -———————————————————————————————————-—-
+<!-- Compact Status Data Block (Right Side - X: 420) -->
+<text x="420" y="30" fill="#c9d1d9">
+    <tspan x="420" y="30"><tspan class="value">Varagan77</tspan> -—————————————————————————————-</tspan>
     
-    <tspan x="15" y="260" class="cc">. </tspan><tspan class="key">Email.Personal</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">johanneswillemkotze@gmail.com</tspan>
-    <tspan x="15" y="280" class="cc">. </tspan><tspan class="key">Discord</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">varagan77</tspan>
+    <tspan x="420" y="60" class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> ............................ </tspan><tspan class="value">Windows 11, Linux</tspan>
+    <tspan x="420" y="80" class="cc">. </tspan><tspan class="key">Uptime</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">25 years</tspan>
+    <tspan x="420" y="100" class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ............................ </tspan><tspan class="value">VSCode, VStudio, Clion </tspan>
+    
+    <tspan x="420" y="140" class="cc">. </tspan><tspan class="key">Languages.Programming</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">C++, C#, Python, </tspan>
+    <tspan x="420" y="160" class="cc">. </tspan><tspan class="key">Languages.Computer</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">HTML, CSS, JSON, LaTeX, YAML</tspan>
+    <tspan x="420" y="180" class="cc">. </tspan><tspan class="key">Languages.Real</tspan>:<tspan class="cc"> ................. </tspan><tspan class="value">English, Afrikaans</tspan>
+
+    <tspan x="420" y="230">- Contact</tspan> -—————————————————————————————-
+    
+    <tspan x="420" y="260" class="cc">. </tspan><tspan class="key">Email.Personal</tspan>:<tspan class="cc"> ............... </tspan><tspan class="value">johanneswillemkotze@gmail.com</tspan>
+    <tspan x="420" y="280" class="cc">. </tspan><tspan class="key">Discord</tspan>:<tspan class="cc"> ........................ </tspan><tspan class="value">varagan77</tspan>
 </text>
 </svg>
