@@ -7,6 +7,7 @@ font-family: 'ConsolasFallback';
 font-display: swap;
 -webkit-size-adjust: 109%;
 size-adjust: 109%;
+
 }
 .key {fill: #ffa657;}
 .value {fill: #a5d6ff;}
@@ -15,7 +16,7 @@ size-adjust: 109%;
 .cc {fill: #616e7f;}
 text, tspan {white-space: pre;}
 </style>
-<text class="ascii-art" x="10" y="15">
+<text x="15" y="30" fill="#c9d1d9" class="ascii">
     
    -======                         
     
