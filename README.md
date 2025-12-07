@@ -1,3 +1,4 @@
+<div>
 <?xml version='1.0' encoding='UTF-8'?>
 <svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1000px" height="700px" font-size="16px">
 <style>
@@ -93,3 +94,4 @@ text, tspan {white-space: pre;} /* Crucial to maintain ASCII spacing */
 <tspan x="450" y="410" class="cc">. </tspan><tspan class="key">Lines of Code</tspan>:<tspan class="cc">. </tspan><tspan class="value">000,000</tspan> ( <tspan class="addColor">000,000</tspan><tspan class="addColor">++</tspan>, <tspan class="delColor"> 00,000</tspan><tspan class="delColor">--</tspan> )
 </text>
 </svg>
+</div>
