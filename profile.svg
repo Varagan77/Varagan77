@@ -22,9 +22,9 @@ text, tspan {white-space: pre;}
     
     <tspan x="10" dy="1em">               ;:+==-==--=+=++==+++=+                 </tspan>
     <tspan x="10" dy="1em">           ;cbcc+===========+::::::c;c;:++            </tspan>
-    <tspan x="10" dy="1em">         ;ac;::::+++++==+===+==+++:;;cbb;:;</tspan>
-    <tspan x="10" dy="1em">         ;:;bbc;;;;:++:===--===--==-=++:;;;;;:</tspan>
-    <tspan x="10" dy="1em">       ;bbcbabc:+:++=+=====+=====---====+:;c;::       </tspan>
+    <tspan x="10" dy="1em">         ;ac;::::+++++==+===+==+++:;;cbb;:;           </tspan>
+    <tspan x="10" dy="1em">         ;:;bbc;;;;:++:===--===--==-=++:;;;;;:         </tspan>
+    <tspan x="10" dy="1em">       ; bbcbabc:+:++=+=====+=====---====+:;c;::       </tspan>
     <tspan x="10" dy="1em">     !!!!aac;;::++::::++++++++:::::++======:cc;;</tspan>
     <tspan x="10" dy="1em">     c!?ac;:::;caaaabbcc;:::::;;;cbbabc;+=-=+;::+:</tspan>
     <tspan x="10" dy="1em">    ??!b;::ca0110!abcc;;::::;;;ccba!1220b:==:;;:+</tspan>
