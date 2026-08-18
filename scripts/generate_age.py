@@ -1,4 +1,11 @@
+#!/usr/bin/env python3
+"""
+Generates a terminal-style 'age in hex' badge as two SVGs (dark/light),
+matching the monospace box style already used for profile.svg.
 
+Run with no args; birthdate is fixed below. Re-run daily via cron so the
+badge (and the days-until-next-birthday countdown) stays current.
+"""
 import datetime
 import os
 import xml.sax.saxutils as sx
@@ -9,20 +16,20 @@ OUT_DIR = "generated"
 
 THEMES = {
     "dark": {
-        "bg": None,          
-        "border": "
-        "key": "
-        "value": "
-        "text": "
-        "accent": "
+        "bg": None,          # transparent
+        "border": "#30363d",
+        "key": "#ffa657",
+        "value": "#a5d6ff",
+        "text": "#c9d1d9",
+        "accent": "#3fb950",
     },
     "light": {
         "bg": None,
-        "border": "
-        "key": "
-        "value": "
-        "text": "
-        "accent": "
+        "border": "#d0d7de",
+        "key": "#953800",
+        "value": "#0550ae",
+        "text": "#24292e",
+        "accent": "#1a7f37",
     },
 }
 
@@ -36,7 +43,7 @@ def compute_age(today: datetime.date):
     try:
         next_bday = datetime.date(next_bday_year, BIRTH_DATE.month, BIRTH_DATE.day)
     except ValueError:
-        
+        # Feb 29 on a non-leap year -> celebrate Mar 1
         next_bday = datetime.date(next_bday_year, 3, 1)
     days_left = (next_bday - today).days
 
