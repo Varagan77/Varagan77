@@ -89,8 +89,8 @@ text, tspan { white-space: pre; }
 <tspan x="390" y="410"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">13</tspan></tspan>
 <tspan x="390" y="430"><tspan class="cc">. </tspan><tspan class="key">Stars</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">3</tspan></tspan>
 <tspan x="390" y="450"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">4</tspan></tspan>
-<tspan x="390" y="470"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>.<tspan class="key">Year</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">232 (this yr)</tspan></tspan>
+<tspan x="390" y="470"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>.<tspan class="key">Year</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">233 (this yr)</tspan></tspan>
 <tspan x="390" y="490"><tspan class="cc">. </tspan><tspan class="key">PRs</tspan>.<tspan class="key">Merged</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">18</tspan></tspan>
-<tspan x="390" y="510"><tspan class="cc">. </tspan><tspan class="key">Activity</tspan>.<tspan class="key">26wk</tspan>:<tspan class="cc"> ...... </tspan><tspan class="add">  ▂   █▄ ▁▄█▂   ▁  ▆█▁   ▄</tspan></tspan>
+<tspan x="390" y="510"><tspan class="cc">. </tspan><tspan class="key">Activity</tspan>.<tspan class="key">26wk</tspan>:<tspan class="cc"> ...... </tspan><tspan class="add">  ▂   █▄ ▁▄█▂   ▁  ▆█▁   ▅</tspan></tspan>
 </text>
 </svg>
