@@ -42,31 +42,31 @@ text, tspan { white-space: pre; }
     <tspan x="10" dy="1em"> ##::::::::: ≤───-\#| \`###:::::\:|#./ ::::::::::: ##</tspan>
     <tspan x="10" dy="1em"> #:::::::::::'``   `|..\``####::::\./::::::::::::::##</tspan>
   </text>
-<text x="700" y="40" fill="#c9d1d9" font-size="14px">
-<tspan x="700" y="99">Varagan77</tspan> -——————————————————————————————————————————————-—-
-<tspan x="700" y="121"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> .................... </tspan><tspan class="value">Windows 11, Linux</tspan></tspan>
-<tspan x="700" y="143"><tspan class="cc">. </tspan><tspan class="key">Distros</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">Ubuntu, Mint, Fedora</tspan></tspan>
-<tspan x="700" y="165"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Vscode, N++, VIM</tspan></tspan>
-<tspan x="700" y="198"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Frontend</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">HTML, CSS, JS, TS, Astro</tspan></tspan>
-<tspan x="700" y="220"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Backend</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">C++, C#, Python, SQL</tspan></tspan>
-<tspan x="700" y="242"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">English, Afrikaans</tspan></tspan>
-<tspan x="700" y="264">- About Me</tspan> -——————————————————————————————————————————————-—-
-<tspan x="700" y="286"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Night</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">Game Modding, Game Developing, Pixel Art</tspan></tspan>
-<tspan x="700" y="308"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Day</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">Hiking, Cycling, Writing, Reading</tspan></tspan>
-<tspan x="700" y="330"><tspan class="cc">. </tspan><tspan class="key">Age</tspan>.<tspan class="key">Lifespan</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">0x1A  (26, 323d until)</tspan></tspan>
-<tspan x="700" y="352">- Contact</tspan> -——————————————————————————————————————————————-—-
-<tspan x="700" y="374"><tspan class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Work</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">johanneswillemkotze@gmail.com</tspan></tspan>
-<tspan x="700" y="396"><tspan class="cc">. </tspan><tspan class="key">Site</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">varagan77.github.io</tspan></tspan>
-<tspan x="700" y="418"><tspan class="cc">. </tspan><tspan class="key">Discord</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">varagan77</tspan></tspan>
-<tspan x="700" y="440">- Stats</tspan> -——————————————————————————————————————————————-—-
-<tspan x="700" y="462"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">13</tspan></tspan>
-<tspan x="700" y="484"><tspan class="cc">. </tspan><tspan class="key">Stars</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">3</tspan></tspan>
-<tspan x="700" y="506"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">4</tspan></tspan>
-<tspan x="700" y="528"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>.<tspan class="key">Year</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">290 (this yr)</tspan></tspan>
-<tspan x="700" y="550"><tspan class="cc">. </tspan><tspan class="key">PRs</tspan>.<tspan class="key">Merged</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">20</tspan></tspan>
-<tspan x="700" y="572"><tspan class="cc">. </tspan><tspan class="key">Contributions</tspan>.<tspan class="key">Total</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">334</tspan></tspan>
-<tspan x="700" y="594"><tspan class="cc">. </tspan><tspan class="key">Streak</tspan>.<tspan class="key">Current</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">1 day</tspan></tspan>
-<tspan x="700" y="616"><tspan class="cc">. </tspan><tspan class="key">Peak</tspan>.<tspan class="key">Week</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">80/wk</tspan></tspan>
-<tspan x="700" y="638"><tspan class="cc">. </tspan><tspan class="key">Activity</tspan>.<tspan class="key">52wk</tspan>:<tspan class="cc"> .. </tspan><tspan class="add">          ▁▁ ▃▁█     ▁▁  ▁      ▂▁  ▁▂       ▁▂    ▇</tspan></tspan>
+<text x="750" y="40" fill="#c9d1d9" font-size="14px">
+<tspan x="750" y="99">Varagan77</tspan> -——————————————————————————————————————————————-—-
+<tspan x="750" y="121"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> .................... </tspan><tspan class="value">Windows 11, Linux</tspan></tspan>
+<tspan x="750" y="143"><tspan class="cc">. </tspan><tspan class="key">Distros</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">Ubuntu, Mint, Fedora</tspan></tspan>
+<tspan x="750" y="165"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Vscode, N++, VIM</tspan></tspan>
+<tspan x="750" y="198"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Frontend</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">HTML, CSS, JS, TS, Astro</tspan></tspan>
+<tspan x="750" y="220"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Backend</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">C++, C#, Python, SQL</tspan></tspan>
+<tspan x="750" y="242"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">English, Afrikaans</tspan></tspan>
+<tspan x="750" y="264">- About Me</tspan> -——————————————————————————————————————————————-—-
+<tspan x="750" y="286"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Night</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">Game Modding, Game Developing, Pixel Art</tspan></tspan>
+<tspan x="750" y="308"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Day</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">Hiking, Cycling, Writing, Reading</tspan></tspan>
+<tspan x="750" y="330"><tspan class="cc">. </tspan><tspan class="key">Age</tspan>.<tspan class="key">Lifespan</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">0x1A  (26, 323d until)</tspan></tspan>
+<tspan x="750" y="352">- Contact</tspan> -——————————————————————————————————————————————-—-
+<tspan x="750" y="374"><tspan class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Work</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">johanneswillemkotze@gmail.com</tspan></tspan>
+<tspan x="750" y="396"><tspan class="cc">. </tspan><tspan class="key">Site</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">varagan77.github.io</tspan></tspan>
+<tspan x="750" y="418"><tspan class="cc">. </tspan><tspan class="key">Discord</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">varagan77</tspan></tspan>
+<tspan x="750" y="440">- Stats</tspan> -——————————————————————————————————————————————-—-
+<tspan x="750" y="462"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">13</tspan></tspan>
+<tspan x="750" y="484"><tspan class="cc">. </tspan><tspan class="key">Stars</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">3</tspan></tspan>
+<tspan x="750" y="506"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">4</tspan></tspan>
+<tspan x="750" y="528"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>.<tspan class="key">Year</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">293 (this yr)</tspan></tspan>
+<tspan x="750" y="550"><tspan class="cc">. </tspan><tspan class="key">PRs</tspan>.<tspan class="key">Merged</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">20</tspan></tspan>
+<tspan x="750" y="572"><tspan class="cc">. </tspan><tspan class="key">Contributions</tspan>.<tspan class="key">Total</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">337</tspan></tspan>
+<tspan x="750" y="594"><tspan class="cc">. </tspan><tspan class="key">Streak</tspan>.<tspan class="key">Current</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">1 day</tspan></tspan>
+<tspan x="750" y="616"><tspan class="cc">. </tspan><tspan class="key">Peak</tspan>.<tspan class="key">Week</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">80/wk</tspan></tspan>
+<tspan x="750" y="638"><tspan class="cc">. </tspan><tspan class="key">Activity</tspan>.<tspan class="key">52wk</tspan>:<tspan class="cc"> .. </tspan><tspan class="add">          ▁▁ ▃▁█     ▁▁  ▁      ▂▁  ▁▂       ▁▂    ▇</tspan></tspan>
 </text>
 </svg>
