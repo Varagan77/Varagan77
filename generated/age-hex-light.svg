@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="460px" height="102px" font-size="13px">
+<style>
+@font-face {
+src: local('Consolas'), local('Consolas Bold');
+font-family: 'ConsolasFallback';
+font-display: swap;
+-webkit-size-adjust: 109%;
+size-adjust: 109%;
+}
+.border { fill: none; stroke: #d0d7de; stroke-width: 1; }
+.title { fill: #1a7f37; font-weight: bold; }
+.key { fill: #953800; }
+.value { fill: #0550ae; }
+.dim { fill: #d0d7de; }
+text, tspan { white-space: pre; }
+</style>
+<rect class="border" x="0.5" y="0.5" width="459" height="101" rx="6" ry="6"/>
+<text x="16" y="24" class="title">-- Age --------------------------------------</text>
+<text x="16" y="46"><tspan class="key">Age (hex): </tspan><tspan class="dim">.................</tspan> <tspan class="value">0x1A  (26 yrs)</tspan></text>
+<text x="16" y="68"><tspan class="key">Next birthday: </tspan><tspan class="dim">.............</tspan> <tspan class="value">323 days</tspan></text>
+</svg>
