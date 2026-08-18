@@ -219,7 +219,7 @@ def build_svg(theme_name: str, years: int, days_left: int, stats: dict) -> str:
 
     y = 40
     LX = 10  # left column (ascii) x
-    RX = 760  # right column (panel) x — wide gap from the art
+    RX = 740  # right column (panel) x — wide gap from the art
     LY = 40
     ASCII_FONT = 20
 
