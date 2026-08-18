@@ -217,7 +217,7 @@ def build_svg(theme_name: str, years: int, days_left: int, stats: dict) -> str:
     streak = compute_streak(stats["daily"])
     peak_week = max((sum(stats["daily"][i:i + 7]) for i in range(0, len(stats["daily"]), 7)), default=0)
 
-    y = 40
+    y = 10
     LX = 10  # left column (ascii) x
     RX = 500  # right column (panel) x
     LY = 40
