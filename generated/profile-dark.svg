@@ -16,7 +16,7 @@ size-adjust: 109%;
 .cc { fill: #616e7f; }
 text, tspan { white-space: pre; }
 </style>
-<text x="15" y="10" fill="#c9d1d9" font-size="30px" class="ascii">
+<text x="15" y="40" fill="#c9d1d9" font-size="20px" class="ascii">
     <tspan x="10" dy="1em">                   _,^^ⁿⁿⁿ^^-n.                      </tspan>
     <tspan x="10" dy="1em">                ,/^'   \  \;ⁿ≈\,                     </tspan>
     <tspan x="10" dy="1em">               ^'(\\( ½,,,,,≈\\^                     </tspan>
@@ -63,11 +63,11 @@ text, tspan { white-space: pre; }
 <tspan x="500" y="420"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">13</tspan></tspan>
 <tspan x="500" y="440"><tspan class="cc">. </tspan><tspan class="key">Stars</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">3</tspan></tspan>
 <tspan x="500" y="460"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">4</tspan></tspan>
-<tspan x="500" y="480"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>.<tspan class="key">Year</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">245 (this yr)</tspan></tspan>
+<tspan x="500" y="480"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>.<tspan class="key">Year</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">248 (this yr)</tspan></tspan>
 <tspan x="500" y="500"><tspan class="cc">. </tspan><tspan class="key">PRs</tspan>.<tspan class="key">Merged</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">20</tspan></tspan>
-<tspan x="500" y="520"><tspan class="cc">. </tspan><tspan class="key">Contributions</tspan>.<tspan class="key">Total</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">289</tspan></tspan>
+<tspan x="500" y="520"><tspan class="cc">. </tspan><tspan class="key">Contributions</tspan>.<tspan class="key">Total</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">292</tspan></tspan>
 <tspan x="500" y="540"><tspan class="cc">. </tspan><tspan class="key">Streak</tspan>.<tspan class="key">Current</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">1 day</tspan></tspan>
 <tspan x="500" y="560"><tspan class="cc">. </tspan><tspan class="key">Peak</tspan>.<tspan class="key">Week</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">80/wk</tspan></tspan>
-<tspan x="500" y="580"><tspan class="cc">. </tspan><tspan class="key">Activity</tspan>.<tspan class="key">52wk</tspan>:<tspan class="cc"> .. </tspan><tspan class="add">          ▁▁ ▃▁█     ▁▁  ▁      ▂▁  ▁▂       ▁▂    ▂</tspan></tspan>
+<tspan x="500" y="580"><tspan class="cc">. </tspan><tspan class="key">Activity</tspan>.<tspan class="key">52wk</tspan>:<tspan class="cc"> .. </tspan><tspan class="add">          ▁▁ ▃▁█     ▁▁  ▁      ▂▁  ▁▂       ▁▂    ▃</tspan></tspan>
 </text>
 </svg>
