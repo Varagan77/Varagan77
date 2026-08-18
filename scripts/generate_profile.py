@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Generates the full neofetch-style profile card (ASCII art + info panel)
-as two SVGs (dark/light): generated/profile-dark.svg, generated/profile-light.svg.
+as two SVGs (dark/light): generated/profile-dark.svg, generated/profile-light.svg. cfgd
 
 Replaces the old dragon.svg + age-hex.svg + github-profile-summary-cards +
 pacman-contribution-graph combo with a single self-contained CLI-style card,
