@@ -286,7 +286,7 @@ text, tspan {{ white-space: pre; }}
 </style>
 <text x="15" y="{y}" fill="{t['text']}" font-size="{ASCII_FONT}px" class="ascii">{ascii_lines}
   </text>
-<text x="{RX}" y="{LY}" fill="{t['text']}" font-size="12px">
+<text x="{RX}" y="{LY}" fill="{t['text']}" font-size="16px">
 {panel_body}
 </text>
 </svg>
