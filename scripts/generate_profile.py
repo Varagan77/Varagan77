@@ -218,10 +218,10 @@ def build_svg(theme_name: str, years: int, days_left: int, stats: dict) -> str:
     peak_week = max((sum(stats["daily"][i:i + 7]) for i in range(0, len(stats["daily"]), 7)), default=0)
 
     y = 40
-    LX = 10  # left column (ascii) x
-    RX = 500  # right column (panel) x
+    LX = 100 # left column (ascii) x
+    RX = 600  # right column (panel) x
     LY = 40
-    ASCII_FONT = 20
+    ASCII_FONT = 25
 
     ascii_lines = "".join(
         f'\n    <tspan x="{LX}" dy="1em">{esc(line)}</tspan>' for line in ASCII_ART
