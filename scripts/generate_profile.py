@@ -161,7 +161,19 @@ def compute_age(today: datetime.date):
     return years, (next_bday - today).days
 
 
-def sparkline(daily, weeks=26):
+def compute_streak(daily):
+    """Current consecutive-day streak (contributions > 0), counted backwards
+    from the most recent day in the calendar."""
+    streak = 0
+    for count in reversed(daily):
+        if count > 0:
+            streak += 1
+        else:
+            break
+    return streak
+
+
+def sparkline(daily, weeks=52):
     """Collapse the last N weeks of the contribution calendar into a
     single row of block characters, GitHub-heatmap-style but in text."""
     if not daily:
@@ -200,55 +212,63 @@ def build_svg(theme_name: str, years: int, days_left: int, stats: dict) -> str:
     hex_age = "0x" + format(years, "X").upper()
     age_value = f"{hex_age}  ({years}, {days_left}d until)"
 
-    graph = sparkline(stats["daily"], weeks=26)
+    graph = sparkline(stats["daily"], weeks=52)
+    total_contrib = sum(stats["daily"]) if stats["daily"] else 0
+    streak = compute_streak(stats["daily"])
+    peak_week = max((sum(stats["daily"][i:i + 7]) for i in range(0, len(stats["daily"]), 7)), default=0)
 
-    y = 30
+    y = 40
     LX = 10  # left column (ascii) x
-    RX = 390  # right column (panel) x
-    LY = 30
+    RX = 500  # right column (panel) x
+    LY = 40
+    ASCII_FONT = 14
 
     ascii_lines = "".join(
         f'\n    <tspan x="{LX}" dy="1em">{esc(line)}</tspan>' for line in ASCII_ART
     )
 
     panel_lines = []
-    panel_lines.append(f'<tspan x="{RX}" y="80">{esc(USERNAME)}</tspan> -——————————————————————————————————————————————-—-')
-    panel_lines.append(f'<tspan x="{RX}" y="100">{row("OS", "Windows 11, Linux", 22)}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="120">{row("Distros", "Ubuntu, Mint, Fedora", 16)}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="140">{row("IDE", "Vscode, N++, VIM", 22)}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="150" class="cc">. </tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="170">{row("Languages", "HTML, CSS, JS, TS, Astro", 12, sub="Frontend")}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="190">{row("Languages", "C++, C#, Python, SQL", 7, sub="Backend")}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="210">{row("Languages", "English, Afrikaans", 3, sub="Real")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="90">{esc(USERNAME)}</tspan> -——————————————————————————————————————————————-—-')
+    panel_lines.append(f'<tspan x="{RX}" y="110">{row("OS", "Windows 11, Linux", 22)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="130">{row("Distros", "Ubuntu, Mint, Fedora", 16)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="150">{row("IDE", "Vscode, Vstudio, Clion, Pycharm", 22)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="160" class="cc">. </tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="180">{row("Languages", "HTML, CSS, JS, TS, Astro", 12, sub="Frontend")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="200">{row("Languages", "C++, C#, Python, SQL", 7, sub="Backend")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="220">{row("Languages", "English, Afrikaans", 3, sub="Real")}</tspan>')
 
-    panel_lines.append(f'<tspan x="{RX}" y="230">- About Me</tspan> -——————————————————————————————————————————————-—-')
-    panel_lines.append(f'<tspan x="{RX}" y="250">{row("Hobbies", "Game Modding, Game Developing, Pixel Art", 8, sub="Night")}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="270">{row("Hobbies", "Hiking, Cycling, Writing, Reading", 11, sub="Day")}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="290">{row("Age", age_value, 11, sub="Lifespan")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="240">- About Me</tspan> -——————————————————————————————————————————————-—-')
+    panel_lines.append(f'<tspan x="{RX}" y="260">{row("Hobbies", "Game Modding, Game Developing, Pixel Art", 8, sub="Night")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="280">{row("Hobbies", "Hiking, Cycling, Writing, Reading", 11, sub="Day")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="300">{row("Age", age_value, 11, sub="Lifespan")}</tspan>')
 
-    panel_lines.append(f'<tspan x="{RX}" y="310">- Contact</tspan> -——————————————————————————————————————————————-—-')
-    panel_lines.append(f'<tspan x="{RX}" y="330">{row("Email", "johanneswillemkotze@gmail.com", 18, sub="Work")}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="350">{row("Site", "varagan77.github.io", 34)}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="370">{row("Discord", "varagan77", 34)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="320">- Contact</tspan> -——————————————————————————————————————————————-—-')
+    panel_lines.append(f'<tspan x="{RX}" y="340">{row("Email", "johanneswillemkotze@gmail.com", 18, sub="Work")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="360">{row("Site", "varagan77.github.io", 34)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="380">{row("Discord", "varagan77", 34)}</tspan>')
 
-    panel_lines.append(f'<tspan x="{RX}" y="390">- Stats</tspan> -——————————————————————————————————————————————-—-')
-    panel_lines.append(f'<tspan x="{RX}" y="410">{row("Repos", stats["repos"], 21)}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="430">{row("Stars", stats["stars"], 21)}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="450">{row("Followers", stats["followers"], 15)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="400">- Stats</tspan> -——————————————————————————————————————————————-—-')
+    panel_lines.append(f'<tspan x="{RX}" y="420">{row("Repos", stats["repos"], 21)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="440">{row("Stars", stats["stars"], 21)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="460">{row("Followers", stats["followers"], 15)}</tspan>')
     commits_val = f"{stats['commits_year']} (this yr)"
-    panel_lines.append(f'<tspan x="{RX}" y="470">{row("Commits", commits_val, 13, sub="Year")}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="490">{row("PRs", stats["prs"], 21, sub="Merged")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="480">{row("Commits", commits_val, 13, sub="Year")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="500">{row("PRs", stats["prs"], 21, sub="Merged")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="520">{row("Contributions", total_contrib, 11, sub="Total")}</tspan>')
+    streak_val = f"{streak} day{'s' if streak != 1 else ''}"
+    panel_lines.append(f'<tspan x="{RX}" y="540">{row("Streak", streak_val, 8, sub="Current")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="560">{row("Peak", f"{peak_week}/wk", 8, sub="Week")}</tspan>')
     panel_lines.append(
-        f'<tspan x="{RX}" y="510"><tspan class="cc">. </tspan>'
-        f'<tspan class="key">Activity</tspan>.<tspan class="key">26wk</tspan>:'
-        f'<tspan class="cc"> ...... </tspan>'
+        f'<tspan x="{RX}" y="580"><tspan class="cc">. </tspan>'
+        f'<tspan class="key">Activity</tspan>.<tspan class="key">52wk</tspan>:'
+        f'<tspan class="cc"> .. </tspan>'
         f'<tspan class="add">{esc(graph)}</tspan></tspan>'
     )
 
     panel_body = "\n".join(panel_lines)
 
     svg = f'''<?xml version='1.0' encoding='UTF-8'?>
-<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="545px" font-size="10px">
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="1180px" height="620px" font-size="10px">
 <style>
 @font-face {{
 src: local('Consolas'), local('Consolas Bold');
@@ -265,7 +285,7 @@ size-adjust: 109%;
 .cc {{ fill: {t['cc']}; }}
 text, tspan {{ white-space: pre; }}
 </style>
-<text x="15" y="{y}" fill="{t['text']}" class="ascii">{ascii_lines}
+<text x="15" y="{y}" fill="{t['text']}" font-size="{ASCII_FONT}px" class="ascii">{ascii_lines}
   </text>
 <text x="{RX}" y="{LY}" fill="{t['text']}">
 {panel_body}
