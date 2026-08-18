@@ -231,9 +231,9 @@ def build_svg(theme_name: str, years: int, days_left: int, stats: dict) -> str:
     panel_lines.append(f'<tspan x="{RX}" y="99">{esc(USERNAME)}</tspan> -——————————————————————————————————————————————-—-')
     panel_lines.append(f'<tspan x="{RX}" y="121">{row("OS", "Windows 11, Linux", 22)}</tspan>')
     panel_lines.append(f'<tspan x="{RX}" y="143">{row("Distros", "Ubuntu, Mint, Fedora", 16)}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="165">{row("IDE", "Vscode, N++, VIM", 22)}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="198">{row("Languages", "HTML, CSS, JS, TS, Astro", 12, sub="Frontend")}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="220">{row("Languages", "C++, C#, Python, SQL", 7, sub="Backend")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="165">{row("IDE", "Vscode, N++, VIM, Android Studio", 22)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="198">{row("Languages", "HTML, CSS, JS, TS", 12, sub="Frontend")}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="220">{row("Languages", "C++, C#, Python, Java, SQL", 7, sub="Backend")}</tspan>')
     panel_lines.append(f'<tspan x="{RX}" y="242">{row("Languages", "English, Afrikaans", 3, sub="Real")}</tspan>')
 
     panel_lines.append(f'<tspan x="{RX}" y="264">- About Me</tspan> -——————————————————————————————————————————————-—-')
