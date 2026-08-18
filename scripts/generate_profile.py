@@ -8,7 +8,12 @@ pacman-contribution-graph combo with a single self-contained CLI-style card,
 matching the original hand-made profile.svg.
 
 Env vars (set by the GitHub Action):
-    GITHUB_TOKEN            - used to query the GraphQL + REST API
+    PROFILE_TOKEN or GITHUB_TOKEN - used to query the GraphQL API.
+        NOTE: the default, repo-scoped GITHUB_TOKEN cannot read
+        cross-repo/profile-level data (stars across repos, follower count,
+        contributionsCollection). Set a classic PAT with `read:user` and
+        `public_repo` scopes as a repo secret named PROFILE_TOKEN, or the
+        stats below will silently come back as 0.
     GITHUB_REPOSITORY_OWNER - the account to pull stats for
 
 Run with no args; safe to run locally without a token (falls back to zeros).
@@ -16,13 +21,14 @@ Run with no args; safe to run locally without a token (falls back to zeros).
 import datetime
 import json
 import os
+import urllib.error
 import urllib.request
 import xml.sax.saxutils as sx
 
 BIRTH_DATE = datetime.date(2000, 7, 7)
 OUT_DIR = "generated"
 USERNAME = os.environ.get("GITHUB_REPOSITORY_OWNER", "Varagan77")
-TOKEN = os.environ.get("GITHUB_TOKEN", "")
+TOKEN = os.environ.get("PROFILE_TOKEN") or os.environ.get("GITHUB_TOKEN", "")
 
 BLOCKS = " ▁▂▃▄▅▆▇█"
 
@@ -45,58 +51,32 @@ THEMES = {
     },
 }
 
-# --- ASCII art, lifted verbatim from the hand-made profile.svg -------------
+# --- ASCII art (dragon head), from the latest ascii-art export -------------
 ASCII_ART = [
-    "                        -======            ",
-    "               ;:+==-==--=+=++==+++=+                 ",
-    "           ;cbcc+===========+::::::c;c;:++            ",
-    "         ;ac;::::+++++==+===+==+++:;;cbb;:;           ",
-    "         ;:;bbc;;;;:++:===--===--==-=++:;;;;;:         ",
-    "       ; bbcbabc:+:++=+=====+=====---====+:;c;::       ",
-    "     !!!!aac;;::++::::++++++++:::::++======:cc;;",
-    "     c!?ac;:::;caaaabbcc;:::::;;;cbbabc;+=-=+;::+:",
-    "    ??!b;::ca0110!abcc;;::::;;;ccba!1220b:==:;;:+",
-    "   @0??b;;b13321?!acc;;:::::::;;;cb!255530c::;cc;;",
-    "   320aaba2443320!bc;;::++++++:::;c!1455320b;b;;;;",
-    "   32?!!!45544320!bcc;::+++++++++::c!0222100baa:::;",
-    "   032000265544320!abc;::+++++++++++:cb?0????0??c:::",
-    "  ;22132565543210!abc;::++++++==+++:;b!00?!!?0?b;cc",
-    "   2233466543221?!bbc;::++++++++++:;ca!00?!!!??bc;;",
-    "   2344566543210?abc;::++++++++++::;ca?00?!a!!?bc;;",
-    "   5555565433220?!acc;:++++:::++++++::;ba!!!!!!bcc;",
-    "   3545665433210!abbc;;:+++:::++++===++:ccba!!!accb",
-    "   64566643?b;:+=====+++======--,.....___..-=+;!bcc",
-    "   35550c==-,.....___.,-=++==-,.____________...,=;b",
-    "   461c:+=-,...._______..,=-,._______________...,=b!",
-    "   50!c+=--,,...__.--,__,=+==,-:;-____________....,-,",
-    "  ?c+cc=---,,...__,;+,_.-=++=--;:._____________...-++",
-    "   c:bb=---,,,..__.,.__,=;c:=-,.____________.._...-::",
-    "    ;aa+-----,..______,+;!a;=-,,._________.......,+::",
-    "    1aac+--,,....__..-:ca!b;=-,-+=._______......,:;:+",
-    "    340b:+-,,.......=c!00!b;+=-,-=+-,...____...-:b;cc",
-    "   33551b+=-,....,-+:b?120b;::+-----==-,...,-=cbbb;;c",
-    "   22454430b:+++++++a12231b;:++=-----=====+::;ccbc;::",
-    "   11245431?!bc;:+++caccb?a;:=--,-----======+:;ccc:+=",
-    "    0145320?ac;++==+;cbbc;;:=-,,,,,,---======+:;;c+=-",
-    "   ;0044320!b;:+==+:cc;::+---=----,,,,--======+:;;+=-",
-    "   _0023310!b;::+++:;;:++=-,-+++=---,..,,-====++:+=--",
-    "    ?012210!bccc::+;;;;:+=---=++=-===-,,,--=======---",
-    "    ??000???aab;:::;::;:=---,,,,,,,,,,,,---====------",
-    "    b?!??!!!!bc:+==+;bbb;:+==-----,,,,,.,,---,,,,,,--",
-    "     ?!!aabaaac:+=+;a??!ac;:+++===----,,,,,,,,,,,,,--",
-    "     !!abbbbbbc;::cb!?!ab;;:+==+==----,,,-,...,,,,--,",
-    "     cabcc;;;;;;::ca!!abc::+==-=++=---,.,--,...,,,--",
-    "      cbc;:::::;::;baabb;:+=-==---==--,..,-,...,,--.",
-    "      ccc;::++::+++:cccc;:+==-==------,,,,,,,..,,,-",
-    "      ;cc;::++::++++:;;:::==-====--,--,,.,,,,.,,--,",
-    "        cc;;:::::+=+:++++++----=----,,.....,,,,-+b!??b",
-    "         ;c;:;::++++++====-------,,,,......,.,,=;b!???",
-    "         aab;:++++===----,,,,,,,,..,......,,,=:ca!???",
-    "       54432?b;:+=+=---,-,,..,,,..........,,,=:;cba!??",
-    "   34444333330b;:++=-----,,,.,...........,,-=+:;cba!!?",
-    "444443333333430a;:+===---,,,..........,,,,-==+:;cbaa!!",
-    "3333222223333320ac;:+====--,,,,......,,,,-===+::;cbaa!",
-    "2222222222233321?!ab;:+++++=--,,,,,,,,----===++:;ccbaa",
+    '                   _,^^ⁿⁿⁿ^^-n.                      ',
+    "                ,/^'   \\  \\;ⁿ≈\\,                     ",
+    "               ^'(\\\\( ½,,,,,≈\\\\^                     ",
+    "              /'\\/(,*~``^`;;`~,^^\\                   ",
+    "             /'(/.%:.::::::::: \\\\⌡                   ",
+    "            |'(//| :::.....     \\\\                   ",
+    "            |./(≈ \\::....        '\\                  ",
+    '             |/≈ / :. ,,___,  %æ7z¿¿,                ',
+    "             |/_/½=≈±√º``''`;╜{     |                ",
+    "             |^\\.;`  (     ;¿  \\__*^'                ",
+    "             | ∩'//..`╜+⌐+?;|,,)'  {                 ",
+    '             `\\¿`+//....     xxxxx,]                 ',
+    '               \\-|///.....,x` ,,  x|                 ',
+    '                 |\\////../#  ,;;, #\\                 ',
+    '                 ]·(///////\\\\\\\\\\\\\\\\\\#                ',
+    '               ,;\\:·##(///////\\;\\\\\\\\#`...__          ',
+    '              .;.#|: ·═##\\\\\\\\\\\\\\\\\\##÷#\\ ::::`--      ',
+    "           .-'|..#|:..·══########÷·÷/##\\ ::::::##    ",
+    "         .,'::|..#\\:..             /..##\\  :::::##   ",
+    "      #-' ::::|..##\\::...         ..##+-->  :::::##  ",
+    '    ##::::::: /.##.#+:::...      /|#.#./    ::::::## ',
+    '  ###::::::::|.### #|\\##::: :   /:|##./   :::::::::# ',
+    ' ##::::::::: ≤───-\\#| \\`###:::::\\:|#./ ::::::::::: ##',
+    " #:::::::::::'``   `|..\\``####::::\\./::::::::::::::##",
 ]
 
 GQL_QUERY = """
@@ -160,7 +140,11 @@ def fetch_stats():
             "issues": user["contributionsCollection"]["totalIssueContributions"],
             "daily": daily,
         }
-    except Exception as exc:  # network unavailable, bad token, etc.
+    except urllib.error.HTTPError as exc:
+        body = exc.read().decode(errors="replace")
+        print(f"warning: stats fetch failed (HTTP {exc.code}): {body}; using zeros")
+        return empty
+    except Exception as exc:  # network unavailable, bad token, malformed response, etc.
         print(f"warning: stats fetch failed ({exc}); using zeros")
         return empty
 
@@ -231,7 +215,7 @@ def build_svg(theme_name: str, years: int, days_left: int, stats: dict) -> str:
     panel_lines.append(f'<tspan x="{RX}" y="80">{esc(USERNAME)}</tspan> -——————————————————————————————————————————————-—-')
     panel_lines.append(f'<tspan x="{RX}" y="100">{row("OS", "Windows 11, Linux", 22)}</tspan>')
     panel_lines.append(f'<tspan x="{RX}" y="120">{row("Distros", "Ubuntu, Mint, Fedora", 16)}</tspan>')
-    panel_lines.append(f'<tspan x="{RX}" y="140">{row("IDE", "Vscode, Vstudio, Clion, Pycharm", 22)}</tspan>')
+    panel_lines.append(f'<tspan x="{RX}" y="140">{row("IDE", "Vscode, N++, VIM", 22)}</tspan>')
     panel_lines.append(f'<tspan x="{RX}" y="150" class="cc">. </tspan>')
     panel_lines.append(f'<tspan x="{RX}" y="170">{row("Languages", "HTML, CSS, JS, TS, Astro", 12, sub="Frontend")}</tspan>')
     panel_lines.append(f'<tspan x="{RX}" y="190">{row("Languages", "C++, C#, Python, SQL", 7, sub="Backend")}</tspan>')
