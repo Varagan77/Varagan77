@@ -42,12 +42,11 @@ text, tspan { white-space: pre; }
     <tspan x="10" dy="1em"> ##::::::::: ≤───-\#| \`###:::::\:|#./ ::::::::::: ##</tspan>
     <tspan x="10" dy="1em"> #:::::::::::'``   `|..\``####::::\./::::::::::::::##</tspan>
   </text>
-<text x="770" y="40" fill="#24292e" font-size="12px">
+<text x="770" y="40" fill="#24292e" font-size="16px">
 <tspan x="770" y="99">Varagan77</tspan> -——————————————————————————————————————————————-—-
 <tspan x="770" y="121"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> .................... </tspan><tspan class="value">Windows 11, Linux</tspan></tspan>
 <tspan x="770" y="143"><tspan class="cc">. </tspan><tspan class="key">Distros</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">Ubuntu, Mint, Fedora</tspan></tspan>
-<tspan x="770" y="165"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Vscode, Vstudio, Clion, Pycharm</tspan></tspan>
-<tspan x="770" y="176" class="cc">. </tspan>
+<tspan x="770" y="165"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Vscode, N++, VIM</tspan></tspan>
 <tspan x="770" y="198"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Frontend</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">HTML, CSS, JS, TS, Astro</tspan></tspan>
 <tspan x="770" y="220"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Backend</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">C++, C#, Python, SQL</tspan></tspan>
 <tspan x="770" y="242"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">English, Afrikaans</tspan></tspan>
@@ -63,9 +62,9 @@ text, tspan { white-space: pre; }
 <tspan x="770" y="462"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">13</tspan></tspan>
 <tspan x="770" y="484"><tspan class="cc">. </tspan><tspan class="key">Stars</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">3</tspan></tspan>
 <tspan x="770" y="506"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">4</tspan></tspan>
-<tspan x="770" y="528"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>.<tspan class="key">Year</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">261 (this yr)</tspan></tspan>
+<tspan x="770" y="528"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>.<tspan class="key">Year</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">265 (this yr)</tspan></tspan>
 <tspan x="770" y="550"><tspan class="cc">. </tspan><tspan class="key">PRs</tspan>.<tspan class="key">Merged</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">20</tspan></tspan>
-<tspan x="770" y="572"><tspan class="cc">. </tspan><tspan class="key">Contributions</tspan>.<tspan class="key">Total</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">305</tspan></tspan>
+<tspan x="770" y="572"><tspan class="cc">. </tspan><tspan class="key">Contributions</tspan>.<tspan class="key">Total</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">309</tspan></tspan>
 <tspan x="770" y="594"><tspan class="cc">. </tspan><tspan class="key">Streak</tspan>.<tspan class="key">Current</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">1 day</tspan></tspan>
 <tspan x="770" y="616"><tspan class="cc">. </tspan><tspan class="key">Peak</tspan>.<tspan class="key">Week</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">80/wk</tspan></tspan>
 <tspan x="770" y="638"><tspan class="cc">. </tspan><tspan class="key">Activity</tspan>.<tspan class="key">52wk</tspan>:<tspan class="cc"> .. </tspan><tspan class="add">          ▁▁ ▃▁█     ▁▁  ▁      ▂▁  ▁▂       ▁▂    ▄</tspan></tspan>
