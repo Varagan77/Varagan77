@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" font-family="ConsolasFallback,Consolas,monospace" width="985px" height="545px" font-size="10px">
+<style>
+@font-face {
+src: local('Consolas'), local('Consolas Bold');
+font-family: 'ConsolasFallback';
+font-display: swap;
+-webkit-size-adjust: 109%;
+size-adjust: 109%;
+}
+.key { fill: #ffa657; }
+.value { fill: #a5d6ff; }
+.addColor { fill: #3fb950; }
+.add { fill: #3fb950; }
+.delColor { fill: #f85149; }
+.cc { fill: #616e7f; }
+text, tspan { white-space: pre; }
+</style>
+<text x="15" y="30" fill="#c9d1d9" class="ascii">
+    <tspan x="10" dy="1em">                        -======            </tspan>
+    <tspan x="10" dy="1em">               ;:+==-==--=+=++==+++=+                 </tspan>
+    <tspan x="10" dy="1em">           ;cbcc+===========+::::::c;c;:++            </tspan>
+    <tspan x="10" dy="1em">         ;ac;::::+++++==+===+==+++:;;cbb;:;           </tspan>
+    <tspan x="10" dy="1em">         ;:;bbc;;;;:++:===--===--==-=++:;;;;;:         </tspan>
+    <tspan x="10" dy="1em">       ; bbcbabc:+:++=+=====+=====---====+:;c;::       </tspan>
+    <tspan x="10" dy="1em">     !!!!aac;;::++::::++++++++:::::++======:cc;;</tspan>
+    <tspan x="10" dy="1em">     c!?ac;:::;caaaabbcc;:::::;;;cbbabc;+=-=+;::+:</tspan>
+    <tspan x="10" dy="1em">    ??!b;::ca0110!abcc;;::::;;;ccba!1220b:==:;;:+</tspan>
+    <tspan x="10" dy="1em">   @0??b;;b13321?!acc;;:::::::;;;cb!255530c::;cc;;</tspan>
+    <tspan x="10" dy="1em">   320aaba2443320!bc;;::++++++:::;c!1455320b;b;;;;</tspan>
+    <tspan x="10" dy="1em">   32?!!!45544320!bcc;::+++++++++::c!0222100baa:::;</tspan>
+    <tspan x="10" dy="1em">   032000265544320!abc;::+++++++++++:cb?0????0??c:::</tspan>
+    <tspan x="10" dy="1em">  ;22132565543210!abc;::++++++==+++:;b!00?!!?0?b;cc</tspan>
+    <tspan x="10" dy="1em">   2233466543221?!bbc;::++++++++++:;ca!00?!!!??bc;;</tspan>
+    <tspan x="10" dy="1em">   2344566543210?abc;::++++++++++::;ca?00?!a!!?bc;;</tspan>
+    <tspan x="10" dy="1em">   5555565433220?!acc;:++++:::++++++::;ba!!!!!!bcc;</tspan>
+    <tspan x="10" dy="1em">   3545665433210!abbc;;:+++:::++++===++:ccba!!!accb</tspan>
+    <tspan x="10" dy="1em">   64566643?b;:+=====+++======--,.....___..-=+;!bcc</tspan>
+    <tspan x="10" dy="1em">   35550c==-,.....___.,-=++==-,.____________...,=;b</tspan>
+    <tspan x="10" dy="1em">   461c:+=-,...._______..,=-,._______________...,=b!</tspan>
+    <tspan x="10" dy="1em">   50!c+=--,,...__.--,__,=+==,-:;-____________....,-,</tspan>
+    <tspan x="10" dy="1em">  ?c+cc=---,,...__,;+,_.-=++=--;:._____________...-++</tspan>
+    <tspan x="10" dy="1em">   c:bb=---,,,..__.,.__,=;c:=-,.____________.._...-::</tspan>
+    <tspan x="10" dy="1em">    ;aa+-----,..______,+;!a;=-,,._________.......,+::</tspan>
+    <tspan x="10" dy="1em">    1aac+--,,....__..-:ca!b;=-,-+=._______......,:;:+</tspan>
+    <tspan x="10" dy="1em">    340b:+-,,.......=c!00!b;+=-,-=+-,...____...-:b;cc</tspan>
+    <tspan x="10" dy="1em">   33551b+=-,....,-+:b?120b;::+-----==-,...,-=cbbb;;c</tspan>
+    <tspan x="10" dy="1em">   22454430b:+++++++a12231b;:++=-----=====+::;ccbc;::</tspan>
+    <tspan x="10" dy="1em">   11245431?!bc;:+++caccb?a;:=--,-----======+:;ccc:+=</tspan>
+    <tspan x="10" dy="1em">    0145320?ac;++==+;cbbc;;:=-,,,,,,---======+:;;c+=-</tspan>
+    <tspan x="10" dy="1em">   ;0044320!b;:+==+:cc;::+---=----,,,,--======+:;;+=-</tspan>
+    <tspan x="10" dy="1em">   _0023310!b;::+++:;;:++=-,-+++=---,..,,-====++:+=--</tspan>
+    <tspan x="10" dy="1em">    ?012210!bccc::+;;;;:+=---=++=-===-,,,--=======---</tspan>
+    <tspan x="10" dy="1em">    ??000???aab;:::;::;:=---,,,,,,,,,,,,---====------</tspan>
+    <tspan x="10" dy="1em">    b?!??!!!!bc:+==+;bbb;:+==-----,,,,,.,,---,,,,,,--</tspan>
+    <tspan x="10" dy="1em">     ?!!aabaaac:+=+;a??!ac;:+++===----,,,,,,,,,,,,,--</tspan>
+    <tspan x="10" dy="1em">     !!abbbbbbc;::cb!?!ab;;:+==+==----,,,-,...,,,,--,</tspan>
+    <tspan x="10" dy="1em">     cabcc;;;;;;::ca!!abc::+==-=++=---,.,--,...,,,--</tspan>
+    <tspan x="10" dy="1em">      cbc;:::::;::;baabb;:+=-==---==--,..,-,...,,--.</tspan>
+    <tspan x="10" dy="1em">      ccc;::++::+++:cccc;:+==-==------,,,,,,,..,,,-</tspan>
+    <tspan x="10" dy="1em">      ;cc;::++::++++:;;:::==-====--,--,,.,,,,.,,--,</tspan>
+    <tspan x="10" dy="1em">        cc;;:::::+=+:++++++----=----,,.....,,,,-+b!??b</tspan>
+    <tspan x="10" dy="1em">         ;c;:;::++++++====-------,,,,......,.,,=;b!???</tspan>
+    <tspan x="10" dy="1em">         aab;:++++===----,,,,,,,,..,......,,,=:ca!???</tspan>
+    <tspan x="10" dy="1em">       54432?b;:+=+=---,-,,..,,,..........,,,=:;cba!??</tspan>
+    <tspan x="10" dy="1em">   34444333330b;:++=-----,,,.,...........,,-=+:;cba!!?</tspan>
+    <tspan x="10" dy="1em">444443333333430a;:+===---,,,..........,,,,-==+:;cbaa!!</tspan>
+    <tspan x="10" dy="1em">3333222223333320ac;:+====--,,,,......,,,,-===+::;cbaa!</tspan>
+    <tspan x="10" dy="1em">2222222222233321?!ab;:+++++=--,,,,,,,,----===++:;ccbaa</tspan>
+  </text>
+<text x="390" y="30" fill="#c9d1d9">
+<tspan x="390" y="80">Varagan77</tspan> -——————————————————————————————————————————————-—-
+<tspan x="390" y="100"><tspan class="cc">. </tspan><tspan class="key">OS</tspan>:<tspan class="cc"> .................... </tspan><tspan class="value">Windows 11, Linux</tspan></tspan>
+<tspan x="390" y="120"><tspan class="cc">. </tspan><tspan class="key">Distros</tspan>:<tspan class="cc"> ......... </tspan><tspan class="value">Ubuntu, Mint, Fedora</tspan></tspan>
+<tspan x="390" y="140"><tspan class="cc">. </tspan><tspan class="key">IDE</tspan>:<tspan class="cc"> ................... </tspan><tspan class="value">Vscode, Vstudio, Clion, Pycharm</tspan></tspan>
+<tspan x="390" y="150" class="cc">. </tspan>
+<tspan x="390" y="170"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Frontend</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">HTML, CSS, JS, TS, Astro</tspan></tspan>
+<tspan x="390" y="190"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Backend</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">C++, C#, Python, SQL</tspan></tspan>
+<tspan x="390" y="210"><tspan class="cc">. </tspan><tspan class="key">Languages</tspan>.<tspan class="key">Real</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">English, Afrikaans</tspan></tspan>
+<tspan x="390" y="230">- About Me</tspan> -——————————————————————————————————————————————-—-
+<tspan x="390" y="250"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Night</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">Game Modding, Game Developing, Pixel Art</tspan></tspan>
+<tspan x="390" y="270"><tspan class="cc">. </tspan><tspan class="key">Hobbies</tspan>.<tspan class="key">Day</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">Hiking, Cycling, Writing, Reading</tspan></tspan>
+<tspan x="390" y="290"><tspan class="cc">. </tspan><tspan class="key">Age</tspan>.<tspan class="key">Lifespan</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">0x1A  (26, 323d until)</tspan></tspan>
+<tspan x="390" y="310">- Contact</tspan> -——————————————————————————————————————————————-—-
+<tspan x="390" y="330"><tspan class="cc">. </tspan><tspan class="key">Email</tspan>.<tspan class="key">Work</tspan>:<tspan class="cc"> ........ </tspan><tspan class="value">johanneswillemkotze@gmail.com</tspan></tspan>
+<tspan x="390" y="350"><tspan class="cc">. </tspan><tspan class="key">Site</tspan>:<tspan class="cc"> .............................. </tspan><tspan class="value">varagan77.github.io</tspan></tspan>
+<tspan x="390" y="370"><tspan class="cc">. </tspan><tspan class="key">Discord</tspan>:<tspan class="cc"> ........................... </tspan><tspan class="value">varagan77</tspan></tspan>
+<tspan x="390" y="390">- Stats</tspan> -——————————————————————————————————————————————-—-
+<tspan x="390" y="410"><tspan class="cc">. </tspan><tspan class="key">Repos</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">0</tspan></tspan>
+<tspan x="390" y="430"><tspan class="cc">. </tspan><tspan class="key">Stars</tspan>:<tspan class="cc"> ................ </tspan><tspan class="value">0</tspan></tspan>
+<tspan x="390" y="450"><tspan class="cc">. </tspan><tspan class="key">Followers</tspan>:<tspan class="cc"> ...... </tspan><tspan class="value">0</tspan></tspan>
+<tspan x="390" y="470"><tspan class="cc">. </tspan><tspan class="key">Commits</tspan>.<tspan class="key">Year</tspan>:<tspan class="cc"> ... </tspan><tspan class="value">0 (this yr)</tspan></tspan>
+<tspan x="390" y="490"><tspan class="cc">. </tspan><tspan class="key">PRs</tspan>.<tspan class="key">Merged</tspan>:<tspan class="cc"> ........... </tspan><tspan class="value">0</tspan></tspan>
+<tspan x="390" y="510"><tspan class="cc">. </tspan><tspan class="key">Activity</tspan>.<tspan class="key">26wk</tspan>:<tspan class="cc"> ...... </tspan><tspan class="add">                          </tspan></tspan>
+</text>
+</svg>
