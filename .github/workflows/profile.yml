@@ -27,6 +27,11 @@ jobs:
 
       - name: Generate generated/profile-{dark,light}.svg
         env:
+          # PROFILE_TOKEN: a classic PAT with `read:user` + `public_repo` scopes,
+          # added under Settings -> Secrets and variables -> Actions.
+          # Falls back to GITHUB_TOKEN, which can only see this one repo and
+          # will report all stats as 0.
+          PROFILE_TOKEN: ${{ secrets.PROFILE_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 scripts/generate_profile.py
 
