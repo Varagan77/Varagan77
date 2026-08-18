@@ -221,7 +221,7 @@ def build_svg(theme_name: str, years: int, days_left: int, stats: dict) -> str:
     LX = 10  # left column (ascii) x
     RX = 500  # right column (panel) x
     LY = 40
-    ASCII_FONT = 14
+    ASCII_FONT = 30
 
     ascii_lines = "".join(
         f'\n    <tspan x="{LX}" dy="1em">{esc(line)}</tspan>' for line in ASCII_ART
